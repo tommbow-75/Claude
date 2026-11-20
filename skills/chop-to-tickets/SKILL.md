@@ -19,7 +19,7 @@ disable-model-invocation: true
 - 宣告 `Blocked by`：哪些票必須先完成。沒有則寫 None。
 - 寫一行「學習目標」：這張票讓使用者練習哪個概念。
 3. 替每一個tickets，取一個branch名，必須遵守取名原則
-4. 寫檔。一票一檔存成 `docs/tickets/NN-<票名>.md`，依相依順序從 `01` 編號（被依賴的票編號在前）。檔案內不放具體檔案路徑與程式碼片段，它們很快過時。
+4. 寫檔。一票一檔存成 `.scratch/tickets/<決策樹題目名>/NN-<票名>.md`，依相依順序從 `01` 編號（被依賴的票編號在前）。檔案內不放具體檔案路徑與程式碼片段，它們很快過時。
 
 # 取名原則
 
@@ -53,3 +53,7 @@ disable-model-invocation: true
 ```
  
 `Status` 的值：`todo`、`doing`、`done`。
+
+# 禁止
+
+禁止拆出infra-only/setup-only的ticket
